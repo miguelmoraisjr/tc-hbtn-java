@@ -1,3 +1,5 @@
+import java.text.Format;
+
 public class PrintFormatacaoNumeros {
     public static void main(String[] args) {
         float taxa = 0.2456f;

@@ -12,6 +12,6 @@ public class Program {
 
         empregado.apresentar();
 
-        System.out.println();
+        
     }
 }

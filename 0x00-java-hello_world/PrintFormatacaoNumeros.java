@@ -5,6 +5,6 @@ public class PrintFormatacaoNumeros {
         float taxa = 0.2456f;
         float valor = 7654.321f;
         System.out.printf("Valor: R$ %,.2f\n", valor);
-        System.out.printf("Taxa: %,.2f%%\n", taxa);
+        System.out.printf("Taxa: %.2f%%\n", taxa);
     }
 }

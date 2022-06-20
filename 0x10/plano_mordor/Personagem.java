@@ -28,6 +28,6 @@ public class Personagem {
 
     @Override
     public String toString() {
-        return pontosDeFelicidade + " - " + obterHumorAtual().getClass().getName();
+        return pontosDeFelicidade + " - " + obterHumorAtual();
     }
 }

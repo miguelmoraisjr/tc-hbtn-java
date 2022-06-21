@@ -5,7 +5,7 @@ public class Quadrado {
             double areaQuadrado = lado * lado;
             return areaQuadrado;
         } else {
-            throw new IllegalArgumentException("Lado deve possuir valor positivo.");
+            throw new IllegalArgumentException("Lado deve possuir valor positivo");
         }
     }
 }

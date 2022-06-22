@@ -4,12 +4,12 @@ public class ContaBancariaBasica {
 
     private String numeracao;
     private double saldo;
-    private double jurosAnual;
+    private double taxaJurosAnual;
 
-    public ContaBancariaBasica(String numeracao, double jurosAnual) {
+    public ContaBancariaBasica(String numeracao, double taxaJurosAnual) {
         this.numeracao = numeracao;
         this.saldo = 0.0;
-        this.jurosAnual = jurosAnual;
+        this.taxaJurosAnual = taxaJurosAnual;
     }
 
     public String getNumeracao() {
@@ -20,8 +20,8 @@ public class ContaBancariaBasica {
         return saldo;
     }
 
-    public double getJurosAnual() {
-        return jurosAnual;
+    public double getTaxaJurosAnual() {
+        return taxaJurosAnual;
     }
 
     public void depositar(double valor) throws OperacaoInvalidaException {
@@ -44,9 +44,9 @@ public class ContaBancariaBasica {
 
     public double calcularTarifaMensal() {
         if ((saldo * 10 / 100) > 10.00) {
-           return 10.00;
+            return 10.00;
         } else {
-          return (saldo * 10 / 100);
+            return (saldo * 10 / 100);
         }
     }
 
@@ -54,7 +54,7 @@ public class ContaBancariaBasica {
         if (saldo < 0 ) {
           return 0.0;
         } else {
-           return saldo * (jurosAnual / 12 / 100);
+           return saldo * (taxaJurosAnual / 12 / 100);
         }
     }
 

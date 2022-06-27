@@ -28,6 +28,14 @@ public class Pedido {
         return total = soma - (soma * percentualDesconto/100);
     }
 
+    public double desconto(){
+        double soma = 0;
+        for (int i=0; i < itens.length; i++) {
+            soma = soma + itens[i].getProduto().obterPrecoLiquido() * itens[i].getQuantidade();
+        }
+        return (soma * percentualDesconto/100);
+    }
+
     public double totalProdutos(){
         double soma = 0;
         for (int i=0; i < itens.length; i++) {
@@ -44,7 +52,7 @@ public class Pedido {
                     itens[i].getProduto().obterPrecoLiquido(), itens[i].getQuantidade(), (itens[i].getProduto().obterPrecoLiquido() * itens[i].getQuantidade()));
         }
         System.out.println("----------------------------");
-        System.out.printf("DESCONTO: %.2f\n", percentualDesconto);
+        System.out.printf("DESCONTO: %.2f\n", desconto());
         System.out.printf("TOTAL PRODUTOS: %.2f\n", totalProdutos());
         System.out.println("----------------------------");
         System.out.printf("TOTAL PEDIDO: %.2f\n", calcularTotal());

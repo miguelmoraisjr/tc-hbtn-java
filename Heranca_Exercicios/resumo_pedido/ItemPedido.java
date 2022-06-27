@@ -22,7 +22,7 @@ public class ItemPedido {
 
     @Override
     public String toString() {
-        return String.format("Tipo %.s  Titulo: %.s Preço: %.2f Quant: %d Total: %.2f",
+        return String.format("Tipo %.s  Titulo: %.s Preco: %.2f Quant: %d Total: %.2f",
                 produto.getClass().getSimpleName(), produto.getTitulo(), produto.obterPrecoLiquido(),
                 quantidade, (produto.obterPrecoLiquido() * quantidade));
     }

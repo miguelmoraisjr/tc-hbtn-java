@@ -39,7 +39,7 @@ public class Pedido {
     public void apresentarResumoPedido(){
         System.out.println("------- RESUMO PEDIDO -------");
         for (int i=0; i < itens.length; i++) {
-            System.out.printf("Tipo %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f\n",
+            System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f\n",
                     itens[i].getProduto().getClass().getSimpleName(), itens[i].getProduto().getTitulo(),
                     itens[i].getProduto().obterPrecoLiquido(), itens[i].getQuantidade(), (itens[i].getProduto().obterPrecoLiquido() * itens[i].getQuantidade()));
         }

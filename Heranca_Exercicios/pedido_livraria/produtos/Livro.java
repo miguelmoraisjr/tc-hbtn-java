@@ -27,6 +27,6 @@ public class Livro extends Produto{
 
     @Override
     public double obterPrecoLiquido() {
-        return getPrecoBruto() + (getPrecoBruto() * 15 /100);
+        return getPrecoBruto() + (getPrecoBruto() * 0.15);
     }
 }

@@ -6,21 +6,21 @@ public class ManipularArrayNumeros {
         return list.indexOf(numero);
     }
 
-    public static void adicionarNumero(List<Integer> list, int numero) {
+    public static void adicionarNumero(List<Integer> list, int numero) throws IllegalArgumentException {
         int result = buscarPosicaoNumero(list, numero);
-        if (result != -1) {
-            throw new RuntimeException("Numero jah contido na lista");
-        } else {
+        if (result == -1) {
             list.add(numero);
+        } else {
+            throw new IllegalArgumentException("Numero jah contido na lista");
         }
     }
 
-    public static void removerNumero(List<Integer> list, int numero){
+    public static void removerNumero(List<Integer> list, int numero) throws IllegalArgumentException {
         int result = buscarPosicaoNumero(list, numero);
-        if (result == -1) {
-            throw new RuntimeException("Numero nao encontrado na lista");
+        if (result != -1) {
+            list.remove(Integer.valueOf(numero));
         } else {
-            list.remove(numero);
+            throw new IllegalArgumentException("Numero nao encontrado na lista");
         }
     }
 

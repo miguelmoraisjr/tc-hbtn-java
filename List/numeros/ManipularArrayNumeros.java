@@ -6,19 +6,19 @@ public class ManipularArrayNumeros {
         return list.indexOf(numero);
     }
 
-    public static void adicionarNumero(List<Integer> list, int numero) throws Exception {
+    public static void adicionarNumero(List<Integer> list, int numero) {
         int result = buscarPosicaoNumero(list, numero);
         if (result != -1) {
-            throw new Exception("Numero jah contido na lista");
+            throw new RuntimeException("Numero jah contido na lista");
         } else {
             list.add(numero);
         }
     }
 
-    public static void removerNumero(List<Integer> list, int numero) throws Exception {
+    public static void removerNumero(List<Integer> list, int numero){
         int result = buscarPosicaoNumero(list, numero);
         if (result == -1) {
-            throw new Exception("Numero nao encontrado na lista");
+            throw new RuntimeException("Numero nao encontrado na lista");
         } else {
             list.remove(numero);
         }

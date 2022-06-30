@@ -15,11 +15,9 @@ public class Blog {
             for (Post post : postagens) {
                 if (post.getAutor().equals(postagem.getAutor()) && post.getTitulo().equals(postagem.getTitulo())) {
                     throw new IllegalArgumentException("Postagem jah existente");
-                } else {
-                    postagens.add(postagem);
-                    break;
                 }
             }
+            postagens.add(postagem);
         }
     }
 

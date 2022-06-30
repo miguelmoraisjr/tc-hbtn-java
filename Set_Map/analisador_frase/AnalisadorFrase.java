@@ -13,12 +13,6 @@ public class AnalisadorFrase {
             String nova = menusculo(palavra);
             listMap.put(nova, contagem);
 
-       /*     if (listMap.containsKey(nova)) {
-                listMap.replace(nova, contagem, contagem++);
-
-            } else {
-                listMap.
-            } */
         }
         return listMap;
     }
@@ -53,7 +47,7 @@ public class AnalisadorFrase {
     }
 
 
-    public static TreeMap contagemPalavras( String texto){
+    public static TreeMap<String, Integer> contagemPalavras( String texto){
         String[] palavras = texto.toLowerCase(Locale.ROOT).split("[?.! ]+");
         TreeMap<String, Integer> lista = new TreeMap<String, Integer>();
         for(int i= 0; i < palavras.length; i ++){

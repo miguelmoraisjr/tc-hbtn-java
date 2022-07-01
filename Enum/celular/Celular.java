@@ -37,9 +37,9 @@ public class Celular {
     public void atualizarContato(Contato contatoAntigo, Contato novoContato){
         if (obterPosicaoContato(contatoAntigo.getNome()) == -1) {
             throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato nao existe");
-        } else if (obterPosicaoContato(novoContato.getNome()) == -1) {
+        } else if (!contatoAntigo.getNome().equals(novoContato.getNome())) {
             throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato jah existente com esse nome");
-        } else {
+        } else  {
             contatos.set(contatos.indexOf(contatoAntigo), novoContato);
         }
     }

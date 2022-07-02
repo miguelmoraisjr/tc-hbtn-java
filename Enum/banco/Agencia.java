@@ -23,7 +23,9 @@ public class Agencia {
         //Optional<Cliente> cliente = Optional.ofNullable(buscarCliente(nomeDoCliente));
         Cliente cliente = buscarCliente(nomeDoCliente);
         if (cliente == null) {
-            clientes.add(new Cliente(nomeDoCliente, transacaoInicial));
+            Cliente addCliente = new Cliente(nomeDoCliente, transacaoInicial);
+            addCliente.adicionarTransacao(transacaoInicial);
+            clientes.add(addCliente);
             return true;
         } else {
             return false;

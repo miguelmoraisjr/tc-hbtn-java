@@ -67,7 +67,7 @@ public class Banco {
                 System.out.println("Cliente: " + agencia.getClientes().get(i).getNome() + " [" + (i+1) + "]");
                 int cont = 1;
                 for (Double transacao : agencia.getClientes().get(i).getTransacoes()) {
-                    System.out.printf("[%d] valor %.2f\n", cont, transacao);
+                    System.out.printf("[%d] valor %.2f\n", cont++, transacao);
                 }
             }
             return true;

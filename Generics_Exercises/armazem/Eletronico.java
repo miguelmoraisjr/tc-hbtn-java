@@ -18,6 +18,6 @@ public class Eletronico {
 
     @Override
     public String toString() {
-        return descricao + " R$ " + valor;
+        return String.format("[%s] R$ %.6f", descricao, valor);
     }
 }

@@ -2,6 +2,8 @@ import java.util.*;
 
 public class Program {
     public static void main(String[] args) {
+        final var localeBrasil = new Locale("pt", "BR");
+        Locale.setDefault(localeBrasil);
         Comida comida1 = new Comida("arroz", 100, 15.9);
         Comida comida2 = new Comida("feijao", 80, 23.0);
         Comida comida3 = new Comida("pacoca", 165, 7.5);

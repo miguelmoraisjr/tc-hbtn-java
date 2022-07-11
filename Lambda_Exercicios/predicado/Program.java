@@ -5,6 +5,8 @@ import java.util.function.*;
 
 public class Program {
     public static void main(String[] args) {
+        final var localeBrasil = new Locale("pt", "BR");
+        Locale.setDefault(localeBrasil);
         Produto produto1 = new Produto("Cafe Chocolate Trufado Baggio",
                 21.99, 250, 120, TiposProduto.COZINHA);
 
@@ -50,4 +52,4 @@ public class Program {
         System.out.println(produtosCozinha);
         System.out.println(produtosBaixoEstoque);
     }
-}    
+}

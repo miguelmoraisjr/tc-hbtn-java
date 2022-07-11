@@ -11,4 +11,10 @@ public class Consulta {
                 .collect(Collectors.toList());
         return listLivro;
     }
+
+    public static Produto obterProdutoMaiorPreco(List<Produto> lista) {
+        Optional<Produto> produto = lista.stream().min(Comparator.comparing(Produto::getPreco).reversed());
+        Produto novoProduto = produto.get();
+        return novoProduto;
+    }
 }

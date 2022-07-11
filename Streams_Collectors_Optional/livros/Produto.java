@@ -30,6 +30,6 @@ public class Produto {
 
     @Override
     public String toString() {
-        return String.format("[%s] %s %s %.2f", codigo, nome, categoria, preco);
+        return String.format("[%s] %s %s R$ %.2f", codigo, nome, categoria, preco);
     }
 }

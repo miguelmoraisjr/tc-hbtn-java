@@ -66,54 +66,20 @@ public class Blog {
         return postPorCategoria;
     }
 
-   /* public TreeMap<Categorias, Set<Post>> obterTodosPostsPorCategorias2() {
-        TreeMap<Categorias, Set<Post>> postCategorias = new TreeMap<Categorias, Set<Post>>();
-        Set<Post> posts = new HashSet<>();
-        for (Post post : postagens) {
-            if (postCategorias.isEmpty()) {
-                posts.add(post);
-                postCategorias.put(post.getCategoria(),posts);
-            } else {
-                for (Categorias key : postCategorias.keySet()) {
-                    if (key.equals(post.getCategoria())) {
-
-                    }
-                }
-                if (postCategorias.containsKey(post.getCategoria())){
-                    posts.add(post);
-                    postCategorias.replace(post.getCategoria(),posts);
-                } else {
-                    posts.add(post);
-                    postCategorias.put(post.getCategoria(),posts);
-                }
-            }
-        }
-        return postCategorias;
-    } */
-
     public Map<Categorias, Set<Post>> obterTodosPostsPorCategorias(){
         Map<Categorias, Set<Post>> listaDeCategoria = new TreeMap<>();
         Set<Post> postPorCategoria;
         for (int i = 0; i < postagens.size(); i++) {
             postPorCategoria = new TreeSet<>();
-            for (Post post: postagens) {
+                for (Post post: postagens) {
                 if (postagens.get(i).getCategoria().equals(post.getCategoria())){
                     postPorCategoria.add(post);
                 }
             }
-            listaDeCategoria.put((Categorias) postagens.get(i).getCategoria(),postPorCategoria);
+            listaDeCategoria.put((postagens.get(i).getCategoria()),postPorCategoria);
 
         }return listaDeCategoria;
     }
- /*   public TreeMap<Categorias, Set<Post>> obterTodosPostsPorCategorias1() {
-        TreeMap<Categorias, Set<Post>> postCategorias = new TreeMap<Categorias, Set<Post>>();
-        Set<Post> posts = new HashSet<>();
-        Set<Categorias> cat = new HashSet<>();
-        for (Post post : postagens) {
-            
-        }
-        return postCategorias;
-    } */
 
     public Map<Autor, Set<Post>> obterTodosPostsPorAutor() {
         Map<Autor, Set<Post>> listaDeAutor = new TreeMap<>();
@@ -130,23 +96,4 @@ public class Blog {
         }return listaDeAutor;
     }
 
-  /*  public TreeMap<Autor, Set<Post>> obterTodosPostsPorAutor1(){
-        TreeMap<Autor,Set<Post>> postAutor = new TreeMap<Autor, Set<Post>>();
-        Set<Post> posts = new HashSet<>();
-        for (Post post : postagens) {
-            if (postAutor.isEmpty()) {
-                posts.add(post);
-               postAutor.put(post.getAutor(),posts);
-            } else {
-                if (postAutor.containsKey(post.getAutor())) {
-                    posts.add(post);
-                    postAutor.replace(post.getAutor(), posts);
-                } else {
-                    posts.add(post);
-                    postAutor.put(post.getAutor(),posts);
-                }
-            }
-        }
-        return postAutor;
-    } */
 }

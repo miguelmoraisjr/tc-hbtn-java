@@ -1,4 +1,6 @@
-public class Pessoa {
+import java.util.Comparator;
+
+public class Pessoa implements Comparable<Pessoa> {
     private int codigo;
     private String nome;
     private String cargo;
@@ -35,6 +37,11 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return String.format("[%.f] %s %s %.f R$ %.2f", codigo, nome, cargo, idade, salario);
+        return String.format("[%d] %s %s %d R$ %.6f", codigo, nome, cargo, idade, salario);
+    }
+
+    @Override
+    public int compareTo(Pessoa pessoa) {
+        return this.getNome().compareTo(pessoa.getNome());
     }
 }

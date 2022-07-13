@@ -53,18 +53,20 @@ public class SerializarEstudantes<Estudante>{
             while ((estudante = (Estudante) iss.readObject()) != null) {
                 estudantes.add(estudante);
             }
+            return estudantes;
         } catch (FileNotFoundException e) {
             System.out.println("Nao foi possivel desserializar");
         } catch (IOException e) {
-        } catch (ClassNotFoundException e) {
             System.out.println("Nao foi possivel desserializar");
+        } catch (ClassNotFoundException e) {
+            System.out.print("Nao foi possivel desserializar");
         }
         finally {
             if (iss != null) {
                 try {
                     iss.close();
                 } catch (IOException e) {
-                    System.out.println("Nao foi possivel desserializar");
+                    System.out.print("Nao foi possivel desserializar");
                 }
             }
         }

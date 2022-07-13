@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SerializarEstudantes<Estudante>{
+public class SerializarEstudantes <Estudante>{
 
     private String nomeArquivo;
 
@@ -49,7 +49,8 @@ public class SerializarEstudantes<Estudante>{
         try {
             fis = new FileInputStream(nomeArquivo);
             iss = new ObjectInputStream(fis);
-            boolean check = false;
+            //boolean check = false;
+            Object Estudante;
             while ((estudante = (Estudante) iss.readObject()) != null) {
                 estudantes.add(estudante);
             }
@@ -57,7 +58,7 @@ public class SerializarEstudantes<Estudante>{
         } catch (FileNotFoundException e) {
             System.out.println("Nao foi possivel desserializar");
         } catch (IOException e) {
-            System.out.println("Nao foi possivel desserializar");
+           // System.out.println("Nao foi possivel desserializar");
         } catch (ClassNotFoundException e) {
             System.out.print("Nao foi possivel desserializar");
         }

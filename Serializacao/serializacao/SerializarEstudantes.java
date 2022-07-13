@@ -50,7 +50,6 @@ public class SerializarEstudantes <Estudante>{
             fis = new FileInputStream(nomeArquivo);
             iss = new ObjectInputStream(fis);
             //boolean check = false;
-            Object Estudante;
             while ((estudante = (Estudante) iss.readObject()) != null) {
                 estudantes.add(estudante);
             }
@@ -73,4 +72,6 @@ public class SerializarEstudantes <Estudante>{
         }
         return estudantes;
     }
+
+   
 }

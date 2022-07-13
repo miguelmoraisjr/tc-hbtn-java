@@ -10,7 +10,7 @@ public class Program {
         Estudante estudante4 = new Estudante(35, "Maike Eed", "Maike@eed100");
         Estudante estudante5 = new Estudante(19, "Peter Diemon", "123");
 
-        List<Estudante> estudantes = List.of(
+        List<Estudante> estudantes =  List.of(
                 estudante1, estudante2, estudante3, estudante4, estudante5
         );
 

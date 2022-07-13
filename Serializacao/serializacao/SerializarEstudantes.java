@@ -22,9 +22,7 @@ public class SerializarEstudantes <T>{
             fos = new FileOutputStream(nomeArquivo);
             oss = new ObjectOutputStream(fos);
             oss.writeObject(estudantes);
-
-        } catch (FileNotFoundException e) {
-            System.out.println("Nao foi possivel serializar");
+            
         } catch (IOException e) {
             System.out.println("Nao foi possivel serializar");
         } finally {
@@ -51,8 +49,6 @@ public class SerializarEstudantes <T>{
 
             estudantes = (List<Estudante>) iss.readObject();
 
-        } catch (FileNotFoundException e) {
-            System.out.println("Nao foi possivel desserializar");
         } catch (IOException e) {
             System.out.println("Nao foi possivel desserializar");
         } catch (ClassNotFoundException e) {

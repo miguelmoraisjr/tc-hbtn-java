@@ -22,7 +22,7 @@ public class SerializarEstudantes <T>{
             fos = new FileOutputStream(nomeArquivo);
             oss = new ObjectOutputStream(fos);
             oss.writeObject(estudantes);
-            
+
         } catch (IOException e) {
             System.out.println("Nao foi possivel serializar");
         } finally {

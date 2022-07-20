@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bea66ee7-fcbb-4810-b59b-1ad8a3b6d89a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../peerlearning/src/main/java/org/example/CalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../peerlearning/src/main/java/org/example/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Streams_Collector_Optional_Exercicios/pessoas_por_cargo_ordem_reversa/ConsultaPessoas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Streams_Collector_Optional_Exercicios/pessoas_por_cargo_ordem_reversa/ConsultaPessoas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techcamps/financeiro/FinanceiroMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FinanceiroMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/techcamps/financeiro/FinanceiroMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FinanceiroMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FinanceiroMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/financeiro-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/financeiro-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/financeiro-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/financeiro-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/miguelj/IdeaProjects/tc-hbtn-java/apache-maven/financeiro-api&quot;
   }
 }</component>
   <component name="RecentsManager">
